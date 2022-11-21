@@ -34,6 +34,7 @@ public class FileUpload {
             one.setUsername(multipartRequest.getParameter("username"));
             one.setEmail(multipartRequest.getParameter("email"));
             one.setAge(multipartRequest.getParameter("age"));
+            one.setDetail(multipartRequest.getParameter("detail"));
 
             if(sid!=null&&!sid.equals("")) {
                 MemberDAO dao = new MemberDAO();

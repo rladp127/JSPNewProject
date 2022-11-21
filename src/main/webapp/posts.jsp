@@ -62,8 +62,7 @@
     <c:forEach items="${list}" var="u">
         <tr>
             <td>${u.getSid()}</td>
-            <td>${u.getPhoto()}</td>
-            <td>${u.getUsername()}</td>
+            <td><img width="100px" height="60px" src="${pageContext.request.contextPath}/upload/${u.getPhoto()}"></td>            <td>${u.getUsername()}</td>
             <td>${u.getUserid()}</td>
             <td>${u.getEmail()}</td>
             <td>${u.getAge()}</td>
